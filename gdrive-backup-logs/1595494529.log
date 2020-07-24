@@ -1,0 +1,8 @@
+operations.go:492: INFO  : .z: Copied (replaced existing)
+operations.go:485: ERROR : .wakatime.db: corrupted on transfer: MD5 hash differ "77322b4a2f7d4ddf0db516b1156b7ae5" vs "e61e6ddda2224f2817d2e4565eadb128"
+operations.go:257: INFO  : .wakatime.db: Removing failed copy
+operations.go:492: INFO  : .local/share/myscripts/gdrive-backup: Copied (replaced existing)
+operations.go:492: INFO  : .zsh_history: Copied (replaced existing)
+operations.go:492: INFO  : .local/share/myscripts/gdrive-backup-logs/1595494026.log: Copied (replaced existing)
+operations.go:485: ERROR : .local/share/myscripts/gdrive-backup-logs/1595494529.log: corrupted on transfer: MD5 hash differ "895695a9e259fd6ce1816d18fcceaa15" vs "584e1ffa56ced6992deaafe42e3121cf"
+operations.go:257: INFO  : .local/share/myscripts/gdrive-backup-logs/1595494529.log: Removing failed copy

@@ -1,0 +1,29 @@
+#!/bin/bash
+
+LOCAL_DIR="/home/plibither8/"
+REMOTE_DIR="iiitd-personal-gdrive:plibither8-linux"
+SCRIPTS_DIR=`dirname $(realpath $0)`
+
+backup_logfile="$SCRIPTS_DIR/gdrive-backup-logs/$EPOCHSECONDS.log"
+
+options=(
+  "--update"
+  "--verbose"
+  "--transfers 30"
+  "--checkers 8"
+  "--contimeout 60s"
+  "--timeout 300s"
+  "--retries 3"
+  "--low-level-retries 10"
+  "--progress"
+  "--stats 1s"
+  "--log-file $backup_logfile"
+  "--log-format date,time"
+  "--filter-from $SCRIPTS_DIR/gdrive-backup-filter.txt"
+)
+
+# Perform backup
+/usr/bin/rclone sync ${options[@]/#/} $LOCAL_DIR $REMOTE_DIR
+
+# Notify via telegram
+tg-notify "💾 Backup done!"

@@ -1,0 +1,24 @@
+2020/07/23 14:27:49 INFO  : .z: Copied (replaced existing)
+2020/07/23 14:27:50 ERROR : .wakatime.db: corrupted on transfer: MD5 hash differ "e2f8f91e7585cb0c1900f0349f73ffd8" vs "9bc44c1fe965e66963f24cf1974e3e31"
+2020/07/23 14:27:50 INFO  : .wakatime.db: Removing failed copy
+2020/07/23 14:27:55 ERROR : .wakatime.log: corrupted on transfer: MD5 hash differ "cdfae8884d56d53b64205df62f10c3e7" vs "d5181a22528f8356a8ea94bfd459bd5e"
+2020/07/23 14:27:55 INFO  : .wakatime.log: Removing failed copy
+2020/07/23 14:27:59 INFO  : .local/share/myscripts/gdrive-backup: Copied (replaced existing)
+2020/07/23 14:28:01 INFO  : .zsh_history: Copied (replaced existing)
+2020/07/23 14:28:06 INFO  : .local/share/myscripts/gdrive-backup-logs/1595494659.log: Copied (new)
+2020/07/23 14:28:07 INFO  : .local/share/myscripts/gdrive-backup-logs/1595494529.log: Copied (new)
+2020/07/23 14:28:07 INFO  : .local/share/myscripts/gdrive-backup-logs/1595494576.log: Copied (new)
+2020/07/23 14:28:10 INFO  : .local/share/myscripts/gdrive-backup-logs/1595494568.log: Copied (new)
+2020/07/23 14:33:25 ERROR : Google drive root 'plibither8-linux': not deleting files as there were IO errors
+2020/07/23 14:33:25 ERROR : Google drive root 'plibither8-linux': not deleting directories as there were IO errors
+2020/07/23 14:33:25 ERROR : Attempt 1/3 failed with 2 errors and: corrupted on transfer: MD5 hash differ "cdfae8884d56d53b64205df62f10c3e7" vs "d5181a22528f8356a8ea94bfd459bd5e"
+2020/07/23 14:33:32 INFO  : .wakatime.db: Copied (new)
+2020/07/23 14:33:36 INFO  : .wakatime.log: Copied (new)
+2020/07/23 14:33:45 INFO  : .local/share/myscripts/gdrive-backup-logs/1595494659.log: Copied (replaced existing)
+2020/07/23 14:36:39 ERROR : Attempt 2/3 succeeded
+2020/07/23 14:36:39 INFO  : 
+Transferred:   	    2.770M / 2.770 MBytes, 100%, 75.347 kBytes/s, ETA 0s
+Checks:             14493 / 14493, 100%
+Transferred:           10 / 10, 100%
+Elapsed time:        37.6s
+

@@ -1,0 +1,3 @@
+14:26:26.727407 INFO  : .z: Copied (replaced existing)
+14:26:28.670590 ERROR : .wakatime.db: corrupted on transfer: MD5 hash differ "b5453d421d6080794c16104c21d7689d" vs "1b23d9a023619fe7db3aae3d696456f0"
+14:26:28.670662 INFO  : .wakatime.db: Removing failed copy
