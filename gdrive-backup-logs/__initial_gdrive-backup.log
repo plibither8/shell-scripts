@@ -1,9 +1,0 @@
-2020/07/23 12:59:24 Can't set -v and --log-level
-2020/07/23 13:00:16 Can't set -v and --log-level
-2020/07/23 13:08:27 INFO  : .z: Copied (replaced existing)
-2020/07/23 13:08:28 ERROR : .wakatime.db: corrupted on transfer: MD5 hash differ "61e2d002b80899c376870b77ccdcd250" vs "93091a6bc96b35d761432ecc416e7eae"
-2020/07/23 13:08:28 INFO  : .wakatime.db: Removing failed copy
-2020/07/23 13:08:29 ERROR : .local/share/myscripts/gdrive-backup.log: corrupted on transfer: MD5 hash differ "1ad60691ad53a031b3666283ff66551e" vs "69d1669d9b64a7742814a1ef55beaf4e"
-2020/07/23 13:08:29 INFO  : .local/share/myscripts/gdrive-backup.log: Removing failed copy
-2020/07/23 13:08:30 INFO  : .local/share/myscripts/gdrive-backup: Copied (replaced existing)
-2020/07/23 13:08:30 INFO  : .zsh_history: Copied (replaced existing)
