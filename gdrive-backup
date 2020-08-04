@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# get secrets
+source `dirname $(realpath $0)`/secrets.sh
+
 LOCAL_DIR="/home/plibither8/"
 REMOTE_DIR="iiitd-personal-gdrive:plibither8-linux"
 SCRIPTS_DIR=`dirname $(realpath $0)`
@@ -26,4 +29,4 @@ options=(
 /usr/bin/rclone sync ${options[@]/#/} $LOCAL_DIR $REMOTE_DIR
 
 # Notify via telegram
-tg-send p8_logs_bot "💾 Backup done!"
+tg-send $TG_LOGS_BOT_NAME "💾 Backup done!"
