@@ -3,11 +3,14 @@
 # get the environment vars
 source `dirname $(realpath $0)`/secrets.sh
 
+# set target bot name
+TG_BOT_NAME=$1
+
 # enpoint url
 API_URL="https://tg.mihir.ch/$TG_BOT_NAME"
 
 # post body
-post_request_body="{ \"secret\": \"$TG_BOTS_SECRET\", \"text\": \"$1\" }"
+post_request_body="{ \"secret\": \"$TG_BOTS_SECRET\", \"text\": \"$2\" }"
 
 # finally post
 curl -H "Content-Type: application/json" \
