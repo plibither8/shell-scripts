@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# get repo name
+repo=basename `git rev-parse --show-toplevel`
+
+# get commit message
+commit_message=`git show --no-patch --format=%B`
+
+# click photo
+fswebcam --quiet --font "sans:15" --title="$repo" --subtitle "$commit_message" -r 1280x720 ~/commit-photos/%Y-%m-%d_%H:%M:%S.jpg
