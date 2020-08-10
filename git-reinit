@@ -4,6 +4,7 @@ echo "reinitialising all git repos in $rootdir..."
 
 for gitdir in `find $rootdir -type d -name .git`; do
   dir=${gitdir%/.git}
+  rm -rf $dir/.git/hooks
   git -C $dir init &> /dev/null
   if [ $? -eq 0 ]; then
     echo "	[OK] $dir"
