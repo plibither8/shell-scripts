@@ -1,0 +1,9 @@
+#!/bin/bash
+/usr/bin/git "$@"
+ESTATUS="$?"
+if [ "$ESTATUS" = "0" ]; then
+    if [ "$1" = "commit" ]; then
+        webcam-pic "git commit"
+    fi
+fi
+exit "${ESTATUS}"
