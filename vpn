@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if nmcli connection show --active | grep "vpn.mihir.ch" -q; then
+  nmcli connection down vpn.mihir.ch
+else
+  nmcli connection up vpn.mihir.ch
+fi

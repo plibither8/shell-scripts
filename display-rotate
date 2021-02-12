@@ -1,0 +1,23 @@
+#! /bin/bash
+
+EXTERNAL_DISPLAY="DP-1"
+
+description=$(xrandr | grep "^$EXTERNAL_DISPLAY")
+
+if echo $description | grep "disconnected"
+then
+  echo "Display \"$EXTERNAL_DISPLAY\" not connected"
+  exit 1
+fi
+
+portrait="left"
+
+tokenized_description=($description)
+if [ ${tokenized_description[4]} == $portrait ]
+then
+  rotate="normal"
+else
+  rotate=$portrait
+fi
+
+xrandr --output $EXTERNAL_DISPLAY --rotate $rotate
