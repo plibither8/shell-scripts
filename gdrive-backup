@@ -29,4 +29,4 @@ options=(
 /usr/bin/rclone sync ${options[@]/#/} $LOCAL_DIR $REMOTE_DIR
 
 # Notify via telegram
-tg-send $TG_LOGS_BOT_NAME "💾 Backup done!"
+# tg-send $TG_LOGS_BOT_NAME "💾 Backup done!"

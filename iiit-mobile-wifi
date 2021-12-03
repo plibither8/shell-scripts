@@ -1,0 +1,25 @@
+#! /bin/bash
+
+$MOBILE_MAC_ADDRESS = "98:09:cf:a5:d4:24"
+$LAPTOP_MAC_ADDRESS = "50:5b:c2:c6:5c:c7"
+
+# if the first argument is 'connect'
+if [ "$1" == "connect" ]; then
+    # down the network first
+    sudo ifconfig wlp1s0 down
+    # change the mac address to mobile
+    sudo 
+    # up the network
+    sudo ifconfig w1l1s0 up
+    # connect wifi to 'STUDENTS-M'
+    sudo nmcli device wifi connect 'STUDENTS-M'
+elif [ "$1" == "disconnect" ]; then
+    # down the network first
+    sudo ifconfig wlp1s0 down
+    # change the mac address to laptop
+    sudo ifconfig wlp1s0 hw ether $LAPTOP_MAC_ADDRESS
+    # up the network
+    sudo ifconfig w1l1s0 up
+    # connect wifi to 'STUDENTS-N'
+    sudo nmcli device wifi connect 'STUDENT-N'
+fi

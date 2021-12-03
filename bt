@@ -1,0 +1,7 @@
+#! /bin/bash
+
+if bluetoothctl info | grep "Paired: yes" -q; then
+	bluetoothctl disconnect
+else
+	bluetoothctl connect 90:7A:58:5E:5D:69
+fi

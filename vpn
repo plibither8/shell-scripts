@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if nmcli connection show --active | grep "vpn.mihir.ch" -q; then
-  nmcli connection down vpn.mihir.ch
+if nordvpn status | grep "Connected" -q; then
+  nordvpn d
 else
-  nmcli connection up vpn.mihir.ch
+  nordvpn c
 fi
